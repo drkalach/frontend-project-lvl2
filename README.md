@@ -39,10 +39,10 @@ Section "group2" deleted.
 
 Установка
 
-npm i -g project-gendiff
+`npm i -g project-gendiff`
 
 Запуск 
-
+```
 $ gendiff --help
 Usage: gendiff [options] <firstConfig> <secondConfig>
 
@@ -52,8 +52,6 @@ Options:
   -V, --version        output the version number
   -f, --format [type]  Output format (default: "stylish")
   -h, --help           output usage information
-
-
-
+```
 
 [![asciicast](https://asciinema.org/a/427913.svg)](https://asciinema.org/a/427913)
