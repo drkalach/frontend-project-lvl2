@@ -2,13 +2,13 @@
 
 [![Actions Status](https://github.com/drkalach/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/drkalach/frontend-project-lvl2/actions)
 
-## Проект #2
+## Проект #2 GENDIFF
 
 Вычислитель отличий
 
 Это приложение, реализованное в рамках второго проекта при изучении профессии Javascript-разработчика на hexlet.io. Ссылка на проект - Вычислитель отличий https://ru.hexlet.io/projects/46/members/16280?step=4
 
-Цель
+## Цель
 
 Второй проект является логическим развитием первого  https://ru.hexlet.io/projects/44/members/14124/reviews. Он захватывает большую часть синтаксических возможностей js и использует более сложную архитектуру. Требования:
 
@@ -19,29 +19,29 @@
  - реализовать полиморфизм подтипов на практике;
  - сделать весь проект в функциональном стиле.
 
-Описание
+ ## Описание
 
 В рамках данного проекта необходимо реализовать утилиту для поиска отличий в конфигурационных файлах.
 
-Возможности утилиты:
+## Возможности утилиты:
 
-    Поддержка разных форматов - json, yaml, ini;
-    Генерация отчета в виде plain text, pretty и json
+ - Поддержка разных форматов - json, yaml, ini;
+ - Генерация отчета в виде plain text, pretty и json
 
-Пример использования:
-
+## Пример использования:
+```
 $ gendiff --format plain first-config.ini second-config.ini
 Setting "common.setting2" deleted.
 Setting "common.setting4" added with value "blah blah".
 Setting "group1.baz" changed from "bas" to "bars".
 Section "group2" deleted.
+```
 
-
-Установка
+## Установка
 
 `npm i -g project-gendiff`
 
-Запуск 
+## Запуск 
 ```
 $ gendiff --help
 Usage: gendiff [options] <firstConfig> <secondConfig>
