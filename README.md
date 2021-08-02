@@ -2,6 +2,9 @@
 
 [![Actions Status](https://github.com/drkalach/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/drkalach/frontend-project-lvl2/actions)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/e315372da7dc001266f7/maintainability)](https://codeclimate.com/github/drkalach/frontend-project-lvl2/maintainability)
+
+
 ## Проект #2 GENDIFF
 
 Вычислитель отличий
