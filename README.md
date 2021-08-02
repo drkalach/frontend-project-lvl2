@@ -7,8 +7,6 @@
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/e315372da7dc001266f7/test_coverage)](https://codeclimate.com/github/drkalach/frontend-project-lvl2/test_coverage)
 
-37fa56f68c8afcd9430a21b57c7939acb5ee27b34d728ab7bd7f76313c0119e4
-
 
 ## Проект #2 GENDIFF
 
