@@ -14,6 +14,9 @@ lint: # Создайте задачу make lint, которая должна з�
 	 npx eslint --fix .
 
 test: # Запуск тестов.
+	NODE_OPTIONS=--experimental-vm-modules npx jest
+
+testWatch: # Запуск тестов.
 	NODE_OPTIONS=--experimental-vm-modules npx jest --watch
 
 
