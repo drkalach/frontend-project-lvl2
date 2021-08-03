@@ -13,7 +13,10 @@ const file2 = JSON.parse(
 );
 const genDiff = () => {
   const result = [];
-  
+  const entries1 = Object.entries(file1);
+  const entries2 = Object.entries(file2);
+  const [...rest1] = entries1;
+  const [...rest2] = entries2;
   entries1.map((item1) => {
     const [key1, value1] = item1;
     return entries2.map((item2) => {
