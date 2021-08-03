@@ -13,10 +13,10 @@ prettier: # запуск проверки утилиты
 lint: # Создайте задачу make lint, которая должна запускать npx eslint .. //   npx eslint --fix .
 	 npx eslint --fix .
 
-test: # Запуск тестов.
+test: # Запуск тестов  для автоматической проверки
 	NODE_OPTIONS=--experimental-vm-modules npx jest
 
-testWatch: # Запуск тестов.
+testWatch: # Запуск тестов режими --watch
 	NODE_OPTIONS=--experimental-vm-modules npx jest --watch
 
 
