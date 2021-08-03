@@ -3,12 +3,12 @@
 [![Actions Status](https://github.com/drkalach/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/drkalach/frontend-project-lvl2/actions)
 
 ### CodeClimate link
+
 [![Maintainability](https://api.codeclimate.com/v1/badges/e315372da7dc001266f7/maintainability)](https://codeclimate.com/github/drkalach/frontend-project-lvl2/maintainability)
 
 [![Lint](https://github.com/drkalach/frontend-project-lvl2/actions/workflows/main.yml/badge.svg)](https://github.com/drkalach/frontend-project-lvl2/actions/workflows/main.yml)
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/e315372da7dc001266f7/test_coverage)](https://codeclimate.com/github/drkalach/frontend-project-lvl2/test_coverage)
-
 
 ## Проект #2 GENDIFF
 
@@ -18,25 +18,26 @@
 
 ## Цель
 
-Второй проект является логическим развитием первого  https://ru.hexlet.io/projects/44/members/14124/reviews. Он захватывает большую часть синтаксических возможностей js и использует более сложную архитектуру. Требования:
+Второй проект является логическим развитием первого https://ru.hexlet.io/projects/44/members/14124/reviews. Он захватывает большую часть синтаксических возможностей js и использует более сложную архитектуру. Требования:
 
- - научиться создавать полноценные `CLI`-приложения (command-line interface), с парсингом входных параметров, валидацией, и генерацией справки;
- - разобраться с форматами данных `json`, `yaml`, `ini` - понять структуру, научиться парсить в `js` и обратно;
- - поработать с деревьями - обход, трансформация, формирование АСТ (абстрактное синтаксическое дерево) - немного кода, кипятящего мозг;
- - познакомиться и реализовать на практике архитектурные принципы 'Фасад', 'Адаптер';
- - реализовать полиморфизм подтипов на практике;
- - сделать весь проект в функциональном стиле.
+-   научиться создавать полноценные `CLI`-приложения (command-line interface), с парсингом входных параметров, валидацией, и генерацией справки;
+-   разобраться с форматами данных `json`, `yaml`, `ini` - понять структуру, научиться парсить в `js` и обратно;
+-   поработать с деревьями - обход, трансформация, формирование АСТ (абстрактное синтаксическое дерево) - немного кода, кипятящего мозг;
+-   познакомиться и реализовать на практике архитектурные принципы 'Фасад', 'Адаптер';
+-   реализовать полиморфизм подтипов на практике;
+-   сделать весь проект в функциональном стиле.
 
- ## Описание
+## Описание
 
 В рамках данного проекта необходимо реализовать утилиту для поиска отличий в конфигурационных файлах.
 
 ## Возможности утилиты:
 
- - Поддержка разных форматов - json, yaml, ini;
- - Генерация отчета в виде plain text, pretty и json
+-   Поддержка разных форматов - json, yaml, ini;
+-   Генерация отчета в виде plain text, pretty и json
 
 ## Пример использования:
+
 ```
 $ gendiff --format plain first-config.ini second-config.ini
 Setting "common.setting2" deleted.
@@ -49,7 +50,8 @@ Section "group2" deleted.
 
 `npm i -g project-gendiff`
 
-## Запуск 
+## Запуск
+
 ```
 $ gendiff --help
 Usage: gendiff [options] <firstConfig> <secondConfig>
