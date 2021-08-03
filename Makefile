@@ -13,6 +13,12 @@ prettier: # запуск проверки утилиты
 lint: # Создайте задачу make lint, которая должна запускать npx eslint .. //   npx eslint --fix .
 	 npx eslint --fix .
 
+test: # Запуск тестов.
+	NODE_OPTIONS=--experimental-vm-modules npx jest
+
+
+test-coverage: # Тест на покрытие тестами кода.
+	NODE_OPTIONS=--experimental-vm-modules npx jest --coverage	
 
 
 rec: # записать игру 
