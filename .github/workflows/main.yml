@@ -39,6 +39,11 @@ jobs:
               # Run Linter
               run: |
                   make lint
-            
+            - name: Run test
+              run: |
+                  make test
+            - name: Run test-coverage
+              run: |
+                  make test-coverage
 
 
