@@ -1,5 +1,5 @@
 install: # установить зависимости    
-	npm ci 
+	npm  ci 
 
 gendiff:
 	node bin/gendiff.js -h
@@ -19,10 +19,8 @@ test: # Запуск тестов  для автоматической пров�
 testWatch: # Запуск тестов режими --watch
 	NODE_OPTIONS=--experimental-vm-modules npx jest --watch
 
-
 test-coverage: # Тест на покрытие тестами кода.
 	NODE_OPTIONS=--experimental-vm-modules npx jest --coverage 
-
 
 rec: # записать игру 
 	asciinema rec
