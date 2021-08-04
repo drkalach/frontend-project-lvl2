@@ -1,5 +1,5 @@
 install: # установить зависимости    
-	npm npm ci 
+	npm ci 
 
 gendiff:
 	node bin/gendiff.js -h
