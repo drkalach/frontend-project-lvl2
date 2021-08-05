@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
 
-export default (file) => {
+const parser = (file) => {
   const filename = fs.readFileSync(path.resolve(process.cwd(), '__fixtures__', file));
   let parse;
   if (path.extname(file) === '.json') {
@@ -12,3 +12,5 @@ export default (file) => {
   }
   return parse;
 };
+
+export default parser;
