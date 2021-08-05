@@ -1,10 +1,9 @@
-import fs from 'fs';
-import path from 'path';
+import parser from './parsers.js';
 
-const file1 = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), '__fixtures__', 'filepath1.json')));
-const file2 = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), '__fixtures__', 'filepath2.json')));
-export default () => {
+const genDiff = (filepath1, filepath2) => {
   const result = [];
+  const file1 = parser(filepath1);
+  const file2 = parser(filepath2);
   const entries1 = Object.entries(file1);
   const entries2 = Object.entries(file2);
   const [...rest1] = entries1;
@@ -31,6 +30,7 @@ export default () => {
   const newString = `{\n  ${result.sort((a, b) => (a[2] > b[2] ? 1 : -1))}}`;
   return newString.replace(/,/gi, '  ');
 };
+export default genDiff;
 
 
 
