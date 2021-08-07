@@ -17,10 +17,18 @@ test('json', () => {
   expect(genDiff(file1, file2)).toBe(result);
 });
 
-test('yaml', () => {
+test('yml', () => {
   const file1 = getFixturePath('filepath1.yml');
   const file2 = getFixturePath('filepath2.yml');
   const result = readFile('resultyml.txt');
+
+  expect(genDiff(file1, file2)).toBe(result);
+});
+
+test('json-nested', () => {
+  const file1 = getFixturePath('file1.json');
+  const file2 = getFixturePath('file2.json');
+  const result = readFile('result-nested.txt');
 
   expect(genDiff(file1, file2)).toBe(result);
 });
