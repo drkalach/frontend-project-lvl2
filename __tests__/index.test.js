@@ -8,7 +8,6 @@ const __dirname = dirname(__filename);
 
 const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
 
-
 test('json', () => {
   const file1 = getFixturePath('filepath1.json');
   const file2 = getFixturePath('filepath2.json');
@@ -80,5 +79,3 @@ test('genDiff yml json', () => {
 
   expect(genDiff(file1, file2, 'json')).toBe(result);
 });
-
-
