@@ -6,7 +6,7 @@
         "gendiff": "bin/gendiff.js"
     },
     "description": "[![Actions Status](https://github.com/drkalach/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/drkalach/frontend-project-lvl2/actions)",
-    "main": "src/index.js",
+    "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -24,6 +24,7 @@
         "commander": "^8.0.0",
         "errno": "^1.0.0",
         "gendiff": "^1.0.0",
+        "ini": "^2.0.0",
         "js-yaml": "^4.1.0",
         "lodash": "^4.17.21"
     },
