@@ -21,10 +21,8 @@
 Второй проект является логическим развитием первого https://ru.hexlet.io/projects/44/members/14124/reviews. Он захватывает большую часть синтаксических возможностей js и использует более сложную архитектуру. Требования:
 
 -   научиться создавать полноценные `CLI`-приложения (command-line interface), с парсингом входных параметров, валидацией, и генерацией справки;
--   разобраться с форматами данных `json`, `yaml`, `ini` - понять структуру, научиться парсить в `js` и обратно;
--   поработать с деревьями - обход, трансформация, формирование АСТ (абстрактное синтаксическое дерево) - немного кода, кипятящего мозг;
--   познакомиться и реализовать на практике архитектурные принципы 'Фасад', 'Адаптер';
--   реализовать полиморфизм подтипов на практике;
+-   разобраться с форматами данных `json`, `yaml` - понять структуру, научиться парсить в `js` и обратно;
+-   поработать с деревьями - обход, трансформация, формирование АСТ (абстрактное синтаксическое дерево) 
 -   сделать весь проект в функциональном стиле.
 
 ## Описание
@@ -33,17 +31,24 @@
 
 ## Возможности утилиты:
 
--   Поддержка разных форматов - json, yaml, ini;
--   Генерация отчета в виде plain text, pretty и json
+-   Поддержка разных форматов - json, yaml;
+-   Генерация отчета в виде plain text, stylish и json
 
 ## Пример использования:
 
 ```
-$ gendiff --format plain first-config.ini second-config.ini
-Setting "common.setting2" deleted.
-Setting "common.setting4" added with value "blah blah".
-Setting "group1.baz" changed from "bas" to "bars".
-Section "group2" deleted.
+$ gendiff --format plain file1.json file2.json
+Property 'common.follow' was added with value: false
+Property 'common.setting2' was removed
+Property 'common.setting3' was updated. From true to null
+Property 'common.setting4' was added with value: 'blah blah'
+Property 'common.setting5' was added with value: [complex value]
+Property 'common.setting6.doge.wow' was updated. From '' to 'so much'
+Property 'common.setting6.ops' was added with value: 'vops'
+Property 'group1.baz' was updated. From 'bas' to 'bars'
+Property 'group1.nest' was updated. From [complex value] to 'str'
+Property 'group2' was removed
+Property 'group3' was added with value: [complex value]
 ```
 
 ## Установка
@@ -53,15 +58,15 @@ Section "group2" deleted.
 ## Запуск
 
 ```
-$ gendiff --help
-Usage: gendiff [options] <firstConfig> <secondConfig>
+$ make gendiff --help
+Usage: gendiff [options] <file1> <file2>
 
 Compares two configuration files and shows a difference.
 
 Options:
   -V, --version        output the version number
   -f, --format [type]  Output format (default: "stylish")
-  -h, --help           output usage information
+  -h, --help           display help for command
 ```
 
 [![asciicast](https://asciinema.org/a/427913.svg)](https://asciinema.org/a/427913)
